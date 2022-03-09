@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharky</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="dynamicBackground/circles.class.js"></script>
+    <script src="models/drawable-objects.class.js"></script>
+    <script src="models/movable-objects.class.js"></script>
+    <script src="models/throwable-object.class.js"></script>
+    <script src="models/throwable-object2.class.js"></script>
+    <script src="models/background-objects.class.js"></script>
+    <script src="models/life-bar.class.js"></script>
+    <script src="models/endBoss-lifeBar.class.js"></script>
+    <script src="models/coins-bar.class.js"></script>
+    <script src="models/life.class.js"></script>
+    <script src="models/coins.class.js"></script>
+    <script src="models/poisen.class.js"></script>
+    <script src="models/poisen-bar.class.js"></script>
+    <script src="models/character.class.js"></script>
+    <script src="models/pufferFish.class.js"></script>
+    <script src="models/pufferFish2.class.js"></script>
+    <script src="models/pufferFish3.class.js"></script>
+    <script src="models/jellyFish.class.js"></script>
+    <script src="models/jellyFish2.class.js"></script>
+    <script src="models/endBoss.class.js"></script>
+    <script src="models/keyboard.class.js"></script>
+    <script src="models/level.class.js"></script>
+    <script src="levels/level1.js"></script>
+    <script src="models/world.class.js"></script>
+    <script src="js/game.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Lato:wght@300&family=Lobster+Two:ital@1&family=PT+Sans&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body onload="animatedBgr()">
+
+    <div id="logo" class="logo">
+
+        <h1>Sharky</h1>
+
+        <canvas id="canvas3">
+        </canvas>
+
+    </div>
+
+    <canvas id="canvas2">
+    </canvas>
+    <script src="js/canvasBgr.js"></script>
+
+
+
+
+    <div id="game-container">
+        <canvas id="canvas" height="480" width="720">
+        </canvas>
+
+        <div id="all-mobile-controls" class="all-mobile-controls d-none">
+            <div class="mobile-control">
+                <img src="img2/arrow-up.png" ontouchstart="up()" ontouchend="stopUp()">
+                <div class="arrow-left-right">
+                    <img src="img2/arrow-left.png" ontouchstart="left()" ontouchend="stopLeft()">
+                    <img src="img2/arrow-rightt.png" ontouchstart="right()" ontouchend="stopRight()">
+                </div>
+                <img src="img2/arrow-down.png" ontouchstart="down()" ontouchend="stopDown()">
+            </div>
+
+            <div class="mobile-control-btn">
+                <button ontouchstart="D()" ontouchend="stopD()">D</button>
+                <button ontouchstart="space()" ontouchend="stopSpace()">Space</button>
+            </div>
+        </div>
+        <div id="instructions" class="instructions">
+            <img src="img/6.Botones/Key/arrow keys.png">
+            <img id="D-btn-img" src="img/6.Botones/Key/D key.png">
+            <img id="SPACE-btn-img" src="img/6.Botones/Key/Space Bar key.png">
+        </div>
+
+        <img id="start-btn" class="d-none" src="img\6.Botones\Start\2.png" onclick="restartGame()">
+        <img id="tryAgain" class="d-none" src="img\6.Botones\Try again\Recurso 17.png" onclick="restartGame()">
+        <img id="startScreen" src="img\6.Botones\Start\4.png" onclick="init()">
+    </div>
+    <div id="instructions-text" class="instructions-text">
+        <p>Keys UP, DOWN, LEFT and RIGHT: <span class="instructions-keys">MOVE SHARK.</span></p>
+        <p>Key SPACE: <span class="instructions-keys">Throw Bubbles for kill Fish (Unlimited).</span></p>
+        <p>Key D: <span class="instructions-keys">Throw Poisend Bubbles for kill Whale.</span></p>
+        <p><span class="instructions-keys">Collect Poisen Bottles to use it for hit Whale.</span></p>
+        <p><span class="instructions-keys">Collect all Coins and get 25 % Life Bonus.</span></p>
+        <p><span class="instructions-keys">Collect Heart and get 100 % Life Bonus.</span></p>
+    </div>
+    <img id="gameOver-win" class="d-none" src="img/6.Botones/Tittles/You win/Mesa de trabajo 1.png">
+    <img id="gameOver-lost" class="d-none" src="img\6.Botones\Tittles\Game Over\Recurso 9.png">
+
+</body>
+
+</html>
