@@ -3,7 +3,7 @@ class Endboss extends MovableObjects {
     speed = 7;
     endBossInt;
     hitEndbossSound = new Audio('audio/hitEndbossSound.wav');
-    
+
 
 
     Endboss_FLOATING = [
@@ -37,7 +37,7 @@ class Endboss extends MovableObjects {
         'img/2.Enemy/3 Final Enemy/Dead/Mesa de trabajo 2 copia 7.png',
         'img/2.Enemy/3 Final Enemy/Dead/Mesa de trabajo 2 copia 8.png',
         'img/2.Enemy/3 Final Enemy/Dead/Mesa de trabajo 2 copia 9.png',
-        'img/2.Enemy/3 Final Enemy/Dead/Mesa de trabajo 2 copia 10.png'  
+        'img/2.Enemy/3 Final Enemy/Dead/Mesa de trabajo 2 copia 10.png'
     ];
 
     constructor(x, y) {
@@ -50,7 +50,6 @@ class Endboss extends MovableObjects {
         this.y = y;
         this.height = 300;
         this.width = 300;
-        this.animate();
     }
 
     animate() {

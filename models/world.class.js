@@ -38,6 +38,13 @@ class World {
         this.addCoinsBonus();
         this.checkGame();
         this.gameMusic();
+        this.start();
+    }
+
+    start() {
+        this.level.enemies1.forEach(e => e.animate());
+        this.level.enemies2.forEach(e => e.animate());
+        this.level.endBoss.forEach(e => e.animate());
     }
 
 

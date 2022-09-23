@@ -1,8 +1,6 @@
 class Coins extends DrawableObject {
+    constructor(x, y) {
 
-
-    constructor(x,y) {
-        
         super().loadImg('img/4. Marcadores/1. Coins/1.png');
         this.x = x;
         this.y = y;

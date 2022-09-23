@@ -1,5 +1,5 @@
 class Character extends MovableObjects {
-
+    world;
     x = 0;
     y = 120;
     width = 200;
@@ -85,11 +85,6 @@ class Character extends MovableObjects {
         'img/1.Sharkie/4.Attack/Bubble trap/Op2 (Without Bubbles)/7.png'
     ];
 
-
-
-    world;
-
-
     constructor() {
         super().loadImg('img/1.Sharkie/1.IDLE/1.png');
         this.loadImages(this.BREAK_IMAGES);
@@ -125,7 +120,7 @@ class Character extends MovableObjects {
                 this.sharkSwim.play();
             } else if (this.world.keyboard.D) {
                 this.playAnimation(this.THROW_POISEN_BUBBLES);
-            }else if(this.world.keyboard.SPACE){
+            } else if (this.world.keyboard.SPACE) {
                 this.playAnimation(this.THROW_POISEN_BUBBLES);
             } else {
                 this.playAnimation(this.BREAK_IMAGES);
@@ -139,7 +134,7 @@ class Character extends MovableObjects {
     }
 
     checkcharacter() {
-        
+
         if (this.isHurt()) {
             this.playAnimation(this.ELECTRIC_SHOCK_IMAGES);
         }

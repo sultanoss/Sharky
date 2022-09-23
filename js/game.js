@@ -5,17 +5,13 @@ let keyboard = new Keyboard();
 
 
 function init() {
-
     canvas = document.getElementById('canvas');
     world = new World(canvas, keyboard);
     document.getElementById('startScreen').classList.add('d-none');
     document.getElementById('instructions').classList.add('d-none');
-    document.getElementById('instructions-text').classList.add('d-none');
     document.getElementById('canvas').classList.add('d-block');
-    document.getElementById('all-mobile-controls').classList.remove('d-none');
-    document.getElementById('logo').classList.add('margin');
+    // document.getElementById('arrows').classList.add('d-show')
 }
-
 
 function restartGame() {
 
@@ -160,4 +156,8 @@ function space() {
 function stopSpace() {
 
     keyboard.SPACE = false;
+}
+
+function showDescription() {
+    document.getElementById('logo').classList.add('d-show')
 }

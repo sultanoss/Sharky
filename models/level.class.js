@@ -8,7 +8,7 @@ class Level {
     poisen;
     levelEnd = 3000;
 
-    constructor(enemies1,enemies2,endBoss,background,life,coins,poisen){
+    constructor(enemies1, enemies2, endBoss, background, life, coins, poisen) {
 
         this.enemies1 = enemies1;
         this.enemies2 = enemies2;
