@@ -149,12 +149,6 @@ canvas {
   display: none;
 }
 
-@media(max-width:1200px) , (min-heigth:375px){
-  .arrows{
-    display: flex;
-  }
-}
-
 .arrows-left {
   display: flex;
   align-items: center;
@@ -169,14 +163,6 @@ canvas {
 }
 .arrows-right img {
   margin: 5px;
-}
-
-.d-none {
-  display: none;
-}
-
-.d-show {
-  display: flex;
 }
 
 #turn {
@@ -212,5 +198,48 @@ canvas {
   #game-container {
     display: block;
   }
+}
+
+.show-touch-panel{
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.hide-touch-panel{
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  cursor: pointer;
+  z-index: 999;
+  display: none;
+}
+
+.controls-info{
+  color: white;
+  font-size: 13px;
+  display: none;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 55%;
+  top: 16%;
+  font-weight: bold;
+    font-family: cursive;
+}
+
+.controls-info img{
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+
+.d-none {
+  display: none;
+}
+
+.d-show {
+  display: flex;
 }
 

@@ -66,6 +66,24 @@
     <script src="js/canvasBgr.js"></script>
 
     <div id="game-container">
+        <div
+            class="show-touch-panel"
+            id="keyboard"
+        >
+            <img
+                src="img/keyboard-3-48.png"
+                onclick="showControls()"
+            >
+        </div>
+        <div
+            class="hide-touch-panel"
+            id="hide-keyboard"
+        >
+            <img
+                src="img/icons8-hide-48.png"
+                onclick="hideControls()"
+            >
+        </div>
         <canvas
             id="canvas"
             height="480"
@@ -158,6 +176,16 @@
                     ontouchend="stopSpace()"
                 >
             </div>
+        </div>
+        <div
+            class="controls-info"
+            id="controls-info"
+        >
+            <span>controls works just on touched !</span>
+            <img
+                src="img/close-window-16.png"
+                onclick="closeNotification()"
+            >
         </div>
 
     </div>

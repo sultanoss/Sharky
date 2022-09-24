@@ -158,6 +158,18 @@ function stopSpace() {
     keyboard.SPACE = false;
 }
 
-function showDescription() {
-    document.getElementById('logo').classList.add('d-show')
+function showControls() {
+    document.getElementById('arrows').classList.add('d-show');
+    document.getElementById('keyboard').classList.add('d-none');
+    document.getElementById('hide-keyboard').classList.add('d-show');
+    document.getElementById('controls-info').classList.add('d-show');
 }
+function hideControls() {
+    document.getElementById('arrows').classList.remove('d-show');
+    document.getElementById('keyboard').classList.remove('d-none');
+    document.getElementById('hide-keyboard').classList.remove('d-show');
+}
+function closeNotification(){
+    document.getElementById('controls-info').classList.remove('d-show');
+}
+
